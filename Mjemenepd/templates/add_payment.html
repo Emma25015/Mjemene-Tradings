@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Payment Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            min-height: 80vh;
+            margin-bottom:70px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+            margin-top:auto;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #00ff7f !important;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+        }
+
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mjemene Tradings(PTY)LTD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin_dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/payment_index">Back</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Add Payment Details</h2>
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+
+            <div class="mb-3">
+                <label for="account_name" class="form-label">Account Holder</label>
+                {{ form.account_name(class="form-control") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="account_number" class="form-label">Account Number</label>
+                {{ form.account_number(class="form-control") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="bank_name" class="form-label">Bank Name</label>
+                {{ form.bank_name(class="form-control") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="branch_name" class="form-label">Branch Name</label>
+                {{ form.branch_name(class="form-control") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="swift_code" class="form-label">SWIFT Code</label>
+                {{ form.swift_code(class="form-control") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="account_type" class="form-label">Account Type</label>
+                {{ form.account_type(class="form-control") }}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Payment Details</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mjemene Tradings(PTY)LTD</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

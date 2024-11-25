@@ -1,0 +1,152 @@
+     body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1c1c1c;
+        color: #fff;
+        height: 100%;
+     }
+
+     video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+        z-index: -1;
+     }
+
+     ul{
+
+     }
+
+     .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: green;
+     }
+
+     .navbar a {
+        color: #fff;
+     }
+
+     .navbar-brand {
+        font-size: 1.8em;
+        font-weight: bold;
+     }
+
+     .content {
+        text-align: center;
+        padding-top: 120px;
+        z-index: 1;
+     }
+
+     h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #FFD700;
+        margin-top:20px;
+     }
+
+     p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        color: #fff;
+     }
+
+     .nav-link {
+        color: blue;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+     }
+
+     .cta-button {
+        background-color: #28a745;
+        color: white;
+        font-size: 1.2em;
+        padding: 12px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+     }
+
+     .cta-button:hover {
+        background-color: #218838;
+     }
+
+     .services {
+        background-image: url('/static/images/Screenshot 2024-10-12 231746.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 10px;
+     }
+
+     .service-card {
+        color: #fff;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        transition: transform 0.3s;
+     }
+
+     .service-card:hover {
+        transform: scale(1.05);
+     }
+
+     .service-card h4 {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 15px;
+     }
+
+     .service-card p {
+        font-size: 1.2em;
+        text-align: center;
+     }
+
+     .social-icons a {
+        margin: 0 15px;
+        color: #fff;
+        font-size: 2em;
+        transition: color 0.3s;
+     }
+
+     .social-icons a:hover {
+        color: #FFD700;
+     }
+
+     footer {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+     }
+
+     footer p {
+        font-size: 1em;
+        margin-bottom: 10px;
+     }
+
+     .language-selector {
+        margin-top: 15px;
+     }
+     html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+     }
+    .main-content {
+        flex: 1;
+    }
